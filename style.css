@@ -1,12 +1,13 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
-*{
+
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Poppins" , sans-serif;
+  font-family: "Poppins", sans-serif;
 }
-body{
+
+body {
   min-height: 100vh;
   display: flex;
   align-items: center;
@@ -15,22 +16,26 @@ body{
   background: #6487FF;
   padding: 30px;
 }
+
 .heading {
   font-family: cursive;
-  text-align: center; /* Center the text horizontally */
-  font-size: 50px; /* Adjust the font size as needed */
-  margin-bottom: 20px; /* Add margin to separate the heading and container */
+  text-align: center;
+  font-size: 50px;
+  margin-bottom: 20px;
 }
-.container{
+
+
+.container {
   position: relative;
-  max-width: 850px;
+  max-width: 1000px;
   width: 100%;
   background: #fff;
   padding: 40px 30px;
   box-shadow: 0 5px 10px rgba(92, 168, 21, 0.562);
   perspective: 2700px;
 }
-.container .cover{
+
+.container .cover {
   position: absolute;
   top: 0;
   left: 50%;
@@ -41,11 +46,13 @@ body{
   transform-origin: left;
   transform-style: preserve-3d;
 }
-.container #flip:checked ~ .cover{
+
+.container #flip:checked ~ .cover {
   transform: rotateY(-180deg);
 }
- .container .cover .front,
- .container .cover .back{
+
+.container .cover .front,
+.container .cover .back {
   position: absolute;
   top: 0;
   left: 0;
@@ -53,12 +60,14 @@ body{
   width: 100%;
   backface-visibility: hidden;
 }
-.cover .back{
+
+.cover .back {
   transform: rotateY(180deg);
   backface-visibility: hidden;
 }
+
 .container .cover::before,
-.container .cover::after{
+.container .cover::after {
   content: '';
   position: absolute;
   height: 100%;
@@ -68,19 +77,22 @@ body{
   z-index: 12;
   backface-visibility: hidden;
 }
-.container .cover::after{
+
+.container .cover::after {
   opacity: 0.3;
   transform: rotateY(180deg);
   backface-visibility: hidden;
 }
-.container .cover img{
+
+.container .cover img {
   position: absolute;
   height: 100%;
   width: 100%;
   object-fit: cover;
   z-index: 10;
 }
-.container .cover .text{
+
+.container .cover .text {
   position: absolute;
   z-index: 130;
   height: 100%;
@@ -90,38 +102,45 @@ body{
   align-items: center;
   justify-content: center;
 }
+
 .cover .text .text-1,
-.cover .text .text-2{
+.cover .text .text-2 {
   font-size: 26px;
   font-weight: 600;
   color: #684545;
   text-align: center;
 }
-.cover .text .text-2{
+
+.cover .text .text-2 {
   font-size: 15px;
   font-weight: 500;
 }
-.container .forms{
+
+.container .forms {
   height: 100%;
   width: 100%;
   background: #fff;
 }
-.container .form-content{
+
+.container .form-content {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
+
 .form-content .login-form,
-.form-content .signup-form{
+.form-content .signup-form {
   width: calc(100% / 2 - 25px);
 }
-.forms .form-content .title{
+
+.forms .form-content .title {
   position: relative;
   font-size: 24px;
   font-weight: 500;
   color: #333;
 }
-.forms .form-content .title:before{
+
+.forms .form-content .title:before {
   content: '';
   position: absolute;
   left: 0;
@@ -130,21 +149,30 @@ body{
   width: 25px;
   background: #1e50bd;
 }
-.forms .signup-form  .title:before{
+
+.forms .signup-form .title:before {
   width: 20px;
 }
-.forms .form-content .input-boxes{
+
+.forms .form-content .input-boxes {
   margin-top: 30px;
+  
 }
-.forms .form-content .input-box{
+
+.forms .form-content .input-box {
   display: flex;
   align-items: center;
   height: 50px;
   width: 100%;
   margin: 10px 0;
   position: relative;
+  transition: transform 1s;
 }
-.form-content .input-box input{
+.forms .form-content .input-box:hover{
+  transform: scale(1.05);
+}
+
+.form-content .input-box input {
   height: 100%;
   width: 100%;
   outline: none;
@@ -152,34 +180,43 @@ body{
   padding: 0 30px;
   font-size: 16px;
   font-weight: 500;
-  border-bottom: 2px solid rgba(0,0,0,0.2);
+  border-bottom: 2px solid rgba(0, 0, 0, 0.2);
   transition: all 0.3s ease;
 }
+
 .form-content .input-box input:focus,
-.form-content .input-box input:valid{
+.form-content .input-box input:valid {
   border-color: #1f3bb8;
 }
-.form-content .input-box i{
+
+.form-content .input-box i {
   position: absolute;
   color: #6487FF;
   font-size: 17px;
+  left: 10px;
+  right: 20px;
 }
-.forms .form-content .text{
+
+.forms .form-content .text {
   font-size: 14px;
   font-weight: 500;
   color: #333;
 }
-.forms .form-content .text a{
+
+.forms .form-content .text a {
   text-decoration: none;
 }
-.forms .form-content .text a:hover{
+
+.forms .form-content .text a:hover {
   text-decoration: underline;
 }
-.forms .form-content .button{
+
+.forms .form-content .button {
   color: #fff;
   margin-top: 40px;
 }
-.forms .form-content .button input{
+
+.forms .form-content .button input {
   color: #fff;
   background: #6487FF;
   border-radius: 6px;
@@ -187,40 +224,49 @@ body{
   cursor: pointer;
   transition: all 0.4s ease;
 }
-.forms .form-content .button input:hover{
+
+.forms .form-content .button input:hover {
   background: #5b13b9;
 }
-.forms .form-content label{
+
+.forms .form-content label {
   color: #5b13b9;
   cursor: pointer;
 }
-.forms .form-content label:hover{
+
+.forms .form-content label:hover {
   text-decoration: underline;
 }
+
 .forms .form-content .login-text,
-.forms .form-content .sign-up-text{
+.forms .form-content .sign-up-text {
   text-align: center;
   margin-top: 25px;
 }
-.container #flip{
+
+.container #flip {
   display: none;
 }
+
 @media (max-width: 730px) {
-  .container .cover{
+  .container .cover {
     display: none;
   }
+
   .form-content .login-form,
-  .form-content .signup-form{
+  .form-content .signup-form {
     width: 100%;
   }
-  .form-content .signup-form{
+
+  .form-content .signup-form {
     display: none;
   }
-  .container #flip:checked ~ .forms .signup-form{
+
+  .container #flip:checked ~ .forms .signup-form {
     display: block;
   }
-  .container #flip:checked ~ .forms .login-form{
+
+  .container #flip:checked ~ .forms .login-form {
     display: none;
   }
 }
-
