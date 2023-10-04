@@ -1,0 +1,10 @@
+body{
+    content: "";
+    background: url('images/background.png') center/cover no-repeat;
+    position: absolute;
+    /* top: 0; */
+    width: 100%;
+    height: 100%;
+    opacity: 0.3;
+    z-index: -1;
+}
