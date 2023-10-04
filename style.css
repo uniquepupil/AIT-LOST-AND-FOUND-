@@ -13,7 +13,7 @@ body {
   align-items: center;
   flex-direction: column;
   justify-content: center;
-  background: #6487FF;
+  background: url('images/background.png') center/cover no-repeat;
   padding: 30px;
 }
 
