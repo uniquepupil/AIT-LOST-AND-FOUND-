@@ -1,0 +1,18 @@
+{
+  "name": "ait-lost-and-found-",
+  "version": "1.0.0",
+  "description": "lost and found website\r [![Netlify Status](https://api.netlify.com/api/v1/badges/17195710-0ae1-4ae7-be01-1ee8aa1e2ebb/deploy-status)](https://app.netlify.com/sites/aitlostfound/deploys)",
+  "main": "app.js",
+  "type":"module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Nirmal",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "express": "^4.18.2",
+    "mongoose": "^7.6.3",
+    "nodemon": "^3.0.1"
+  }
+}
