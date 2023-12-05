@@ -1,1 +1,1 @@
-alert("you are smart")
+alert("The developer is suffering from exams")
