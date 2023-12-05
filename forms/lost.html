@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Lost Item Form</title>
+  <link rel="stylesheet" href="lost.css">
+</head>
+<body>
+  <div class="container">
+    <div class="form-container">
+      <h1>Report a Lost Item</h1>
+      <form id="lostItemForm">
+        <div class="form-group">
+          <label for="personName">Your Name:</label>
+          <input type="text" id="personName" name="personName" required>
+        </div>
+        
+        <div class="form-group">
+          <label for="gmailId">Gmail ID:</label>
+          <input type="email" id="gmailId" name="gmailId" required>
+        </div>
+        
+        <div class="form-group">
+          <label for="contactNo">Contact Number:</label>
+          <input type="tel" id="contactNo" name="contactNo" required>
+        </div>
+        
+        <div class="form-group">
+          <label for="location">Where It Was Lost:</label>
+          <input type="text" id="location" name="location" required>
+        </div>
+        
+        <div class="form-group">
+          <label for="lostItemName">Lost Item:</label>
+          <input type="text" id="lostItemName" name="lostItemName" required>
+        </div>
+        
+        <div class="form-group">
+          <label for="description">Description:</label>
+          <textarea id="description" name="description" required></textarea>
+        </div>
+        
+        <div class="form-group">
+          <label for="dateLost">Date When Lost:</label>
+          <input type="date" id="dateLost" name="dateLost" required>
+        </div>
+        
+        <button type="submit">Submit</button>
+      </form>
+      <div id="confirmation"></div>
+    </div>
+    <div class="image-container">
+      <img src="Images/lost.png" alt="Image" class="big-image">
+    </div>
+  </div>
+  
+  <script src="lost.js"></script>
+</body>
+</html>

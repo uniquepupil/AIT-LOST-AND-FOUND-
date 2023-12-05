@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Found Item Form</title>
+  <link rel="stylesheet" href="found.css">
+</head>
+<body>
+  <div class="container">
+    <div class="form-container">
+      <h1>Report a Found Item</h1>
+      <form id="foundItemForm">
+        <div class="form-group">
+          <label for="foundItemName">Item Name:</label>
+          <input type="text" id="foundItemName" name="foundItemName" required>
+        </div>
+        
+        <div class="form-group">
+          <label for="foundLocation">Location Found:</label>
+          <input type="text" id="foundLocation" name="foundLocation" required>
+        </div>
+        
+        <div class="form-group">
+          <label for="finderContact">Your Contact Information:</label>
+          <input type="text" id="finderContact" name="finderContact" required>
+        </div>
+        
+        <div class="form-group">
+          <label for="dateFound">Date When Found:</label>
+          <input type="date" id="dateFound" name="dateFound" required>
+        </div>
+        
+        <div class="form-group">
+          <label for="finderMessage">Additional Message:</label>
+          <textarea id="finderMessage" name="finderMessage"></textarea>
+        </div>
+        
+        <button type="submit">Submit</button>
+      </form>
+      <div id="foundConfirmation"></div>
+    </div>
+    <div class="image-container">
+      <img src="Images/found.jpg" alt="Image" class="big-image">
+    </div>
+  </div>
+  
+  <script src="found.js"></script>
+</body>
+</html>
