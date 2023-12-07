@@ -1,68 +1,89 @@
-/* Your CSS styles go here */
+/* Your modified CSS with removed background from the form */
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
-  }
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+.container {
+  display: flex;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.form-container {
+  flex: 1;
+  padding: 20px;
+  border-radius: 8px;
+  max-height: 80vh;
   
-  .container {
-    display: flex;
-    max-width: 100%;
-  }
-  
-  .form-container {
-    flex: 1;
-    padding: 20px;
-  }
-  
-  .image-container {
-    flex: 1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .big-image {
-    max-width: 100%;
-    height: auto;
-    max-height: 80vh; /* Adjust the maximum height of the image */
-  }
-  
-  .form-group {
-    margin-bottom: 20px;
-    text-align: left;
-  }
-  
-  label {
-    display: block;
-    margin-bottom: 5px;
-  }
-  
-  input,
-  textarea {
-    width: calc(100% - 12px);
-    padding: 6px;
-    border-radius: 4px;
-    border: 1px solid #ccc;
-  }
-  
-  button {
-    padding: 8px 20px;
-    border-radius: 4px;
-    border: none;
-    background-color: #007bff;
-    color: #fff;
-    cursor: pointer;
-  }
-  
-  button:hover {
-    background-color: #0056b3;
-  }
-  
-  #confirmation {
-    margin-top: 20px;
-    text-align: center;
-    font-weight: bold;
-  }
-  
+}
+
+.image-container {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.big-image {
+  max-width: 100%;
+  height: auto;
+  max-height: 80vh;
+  border-radius: 8px;
+}
+
+.form-group {
+  margin-bottom: 25px;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+input,
+textarea {
+  width: calc(100% - 12px);
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  transition: border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 8px rgba(0, 123, 255, 0.4);
+}
+
+input:hover,
+textarea:hover {
+  border-color: #999;
+}
+
+button {
+  padding: 14px 26px;
+  border-radius: 8px;
+  border: none;
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+button:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px);
+}
+
+#confirmation {
+  margin-top: 20px;
+  text-align: center;
+  font-weight: bold;
+  color: #007bff;
+}
