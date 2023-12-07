@@ -8,8 +8,9 @@
 }
 
 body {
-    background-image: url('background.png') center/cover no-repeat;
-    background: url('background.png') center/cover no-repeat;
+    
+    background: url('output-onlinepngtools.png') center/cover no-repeat ;
+    
   }
 
 .navbar {
@@ -331,14 +332,12 @@ h5 {
     height: 100%;
     width: 100%;
     background: #fff;
-    margin-left: 100px;
   }
   
   .container .form-content {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-left: 100px ;
     
   }
   
@@ -379,9 +378,11 @@ h5 {
   }
   
   .ic2 {
-    margin-top: 30px;
+    margin-top: 20px;
   }
-  
+  .ic3 {
+    margin-top: 10px;
+  }
   .input {
     background-color: white;
     border-radius: 12px;
@@ -452,7 +453,7 @@ h5 {
     font-size: 18px;
     height: 50px;
     margin-left: 30%;
-    margin-top: 38px;
+    margin-top: 20px;
     text-align: center;
     
    
