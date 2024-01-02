@@ -12,15 +12,7 @@
     z-index: 1000;
 }
 
-.navbar .navbar-brand {
-    font-size: 2rem;
-    font-weight: 700;
-    font-family: 'Monoton', cursive;
-}
 
-.navbar .navbar-brand:hover {
-    color: #c51313;
-}
 
 ul li {
     margin: 0px 10px;
